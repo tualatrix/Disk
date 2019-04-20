@@ -23,6 +23,15 @@
 		10F3C7041F23D9C9006D42EF /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7031F23D9C9006D42EF /* Disk+Data.swift */; };
 		10F3C7061F23D9E0006D42EF /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */; };
 		10F3C7081F23DAF2006D42EF /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7071F23DAF2006D42EF /* Message.swift */; };
+		212A4EE5226B1F6200C6E817 /* Disk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C6FB1F23D994006D42EF /* Disk.swift */; };
+		212A4EE6226B1F6200C6E817 /* Disk+InternalHelpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FA3761F713332004C600F /* Disk+InternalHelpers.swift */; };
+		212A4EE7226B1F6200C6E817 /* Disk+Codable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C6FD1F23D9A4006D42EF /* Disk+Codable.swift */; };
+		212A4EE8226B1F6200C6E817 /* Disk+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109256591F247F7700B3C32A /* Disk+Helpers.swift */; };
+		212A4EE9226B1F6200C6E817 /* Disk+[Data].swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */; };
+		212A4EEB226B1F6200C6E817 /* Disk+Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10F3C7031F23D9C9006D42EF /* Disk+Data.swift */; };
+		212A4EEC226B1F6200C6E817 /* Disk+VolumeInformation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 103FA3781F713340004C600F /* Disk+VolumeInformation.swift */; };
+		212A4EEE226B1F6200C6E817 /* Disk+Errors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 104611771F27B27E00BBDB3A /* Disk+Errors.swift */; };
+		212A4EF1226B1F6200C6E817 /* Disk.h in Headers */ = {isa = PBXBuildFile; fileRef = 10F3C6E41F23D984006D42EF /* Disk.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +64,7 @@
 		10F3C7031F23D9C9006D42EF /* Disk+Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+Data.swift"; sourceTree = "<group>"; };
 		10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Disk+[Data].swift"; sourceTree = "<group>"; };
 		10F3C7071F23DAF2006D42EF /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		212A4EF6226B1F6200C6E817 /* Disk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Disk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,6 +80,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				10F3C6EB1F23D984006D42EF /* Disk.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A4EEF226B1F6200C6E817 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -90,6 +107,7 @@
 			children = (
 				10F3C6E11F23D984006D42EF /* Disk.framework */,
 				10F3C6EA1F23D984006D42EF /* DiskTests.xctest */,
+				212A4EF6226B1F6200C6E817 /* Disk.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -105,10 +123,9 @@
 				104611771F27B27E00BBDB3A /* Disk+Errors.swift */,
 				109256591F247F7700B3C32A /* Disk+Helpers.swift */,
 				10F3C6FD1F23D9A4006D42EF /* Disk+Codable.swift */,
-				10F3C6FF1F23D9B1006D42EF /* Disk+UIImage.swift */,
-				10F3C7011F23D9C1006D42EF /* Disk+[UIImage].swift */,
 				10F3C7031F23D9C9006D42EF /* Disk+Data.swift */,
 				10F3C7051F23D9E0006D42EF /* Disk+[Data].swift */,
+				212A4EF8226B1FF800C6E817 /* iOS */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -125,6 +142,15 @@
 			path = Tests;
 			sourceTree = "<group>";
 		};
+		212A4EF8226B1FF800C6E817 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				10F3C6FF1F23D9B1006D42EF /* Disk+UIImage.swift */,
+				10F3C7011F23D9C1006D42EF /* Disk+[UIImage].swift */,
+			);
+			path = iOS;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -136,12 +162,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		212A4EF0226B1F6200C6E817 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A4EF1226B1F6200C6E817 /* Disk.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		10F3C6E01F23D984006D42EF /* Disk */ = {
+		10F3C6E01F23D984006D42EF /* Disk-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 10F3C6F51F23D984006D42EF /* Build configuration list for PBXNativeTarget "Disk" */;
+			buildConfigurationList = 10F3C6F51F23D984006D42EF /* Build configuration list for PBXNativeTarget "Disk-iOS" */;
 			buildPhases = (
 				10F3C6DC1F23D984006D42EF /* Sources */,
 				10F3C6DD1F23D984006D42EF /* Frameworks */,
@@ -152,7 +186,7 @@
 			);
 			dependencies = (
 			);
-			name = Disk;
+			name = "Disk-iOS";
 			productName = Disk;
 			productReference = 10F3C6E11F23D984006D42EF /* Disk.framework */;
 			productType = "com.apple.product-type.framework";
@@ -174,6 +208,24 @@
 			productName = DiskTests;
 			productReference = 10F3C6EA1F23D984006D42EF /* DiskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		212A4EE3226B1F6200C6E817 /* Disk-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 212A4EF3226B1F6200C6E817 /* Build configuration list for PBXNativeTarget "Disk-macOS" */;
+			buildPhases = (
+				212A4EE4226B1F6200C6E817 /* Sources */,
+				212A4EEF226B1F6200C6E817 /* Frameworks */,
+				212A4EF0226B1F6200C6E817 /* Headers */,
+				212A4EF2226B1F6200C6E817 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Disk-macOS";
+			productName = Disk;
+			productReference = 212A4EF6226B1F6200C6E817 /* Disk.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -208,7 +260,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				10F3C6E01F23D984006D42EF /* Disk */,
+				10F3C6E01F23D984006D42EF /* Disk-iOS */,
+				212A4EE3226B1F6200C6E817 /* Disk-macOS */,
 				10F3C6E91F23D984006D42EF /* DiskTests */,
 			);
 		};
@@ -227,6 +280,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				109256561F24576700B3C32A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		212A4EF2226B1F6200C6E817 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,12 +320,27 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		212A4EE4226B1F6200C6E817 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				212A4EE5226B1F6200C6E817 /* Disk.swift in Sources */,
+				212A4EE6226B1F6200C6E817 /* Disk+InternalHelpers.swift in Sources */,
+				212A4EE7226B1F6200C6E817 /* Disk+Codable.swift in Sources */,
+				212A4EE8226B1F6200C6E817 /* Disk+Helpers.swift in Sources */,
+				212A4EE9226B1F6200C6E817 /* Disk+[Data].swift in Sources */,
+				212A4EEB226B1F6200C6E817 /* Disk+Data.swift in Sources */,
+				212A4EEC226B1F6200C6E817 /* Disk+VolumeInformation.swift in Sources */,
+				212A4EEE226B1F6200C6E817 /* Disk+Errors.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		10F3C6ED1F23D984006D42EF /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 10F3C6E01F23D984006D42EF /* Disk */;
+			target = 10F3C6E01F23D984006D42EF /* Disk-iOS */;
 			targetProxy = 10F3C6EC1F23D984006D42EF /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -406,7 +481,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Disk;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -430,7 +505,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PRODUCT_NAME = Disk;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -469,6 +544,59 @@
 			};
 			name = Release;
 		};
+		212A4EF4226B1F6200C6E817 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
+				PRODUCT_NAME = Disk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		212A4EF5226B1F6200C6E817 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				APPLICATION_EXTENSION_API_ONLY = YES;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "$(SRCROOT)/Sources/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				PRODUCT_BUNDLE_IDENTIFIER = saoudrizwan.Disk;
+				PRODUCT_NAME = Disk;
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -481,7 +609,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		10F3C6F51F23D984006D42EF /* Build configuration list for PBXNativeTarget "Disk" */ = {
+		10F3C6F51F23D984006D42EF /* Build configuration list for PBXNativeTarget "Disk-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				10F3C6F61F23D984006D42EF /* Debug */,
@@ -495,6 +623,15 @@
 			buildConfigurations = (
 				10F3C6F91F23D984006D42EF /* Debug */,
 				10F3C6FA1F23D984006D42EF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		212A4EF3226B1F6200C6E817 /* Build configuration list for PBXNativeTarget "Disk-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				212A4EF4226B1F6200C6E817 /* Debug */,
+				212A4EF5226B1F6200C6E817 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
