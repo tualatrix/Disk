@@ -20,6 +20,7 @@
 // OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
 // THE SOFTWARE.
 
+#if os(iOS)
 import UIKit
 
 public extension Disk {
@@ -128,5 +129,4 @@ public extension Disk {
         }
     }
 }
-
-
+#endif
